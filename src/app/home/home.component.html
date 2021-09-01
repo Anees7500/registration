@@ -1,0 +1,20 @@
+<mat-toolbar class="position-absolute" color="primary">
+  <mat-toolbar-row class="justify-content-between">
+    <button [routerLink]="['/home']" mat-button>Home</button>
+    <button (click)="logout()" mat-button>Logout</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="d-flex align-items-center h-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-5">
+        <mat-card>
+          <h3 class="text-left"> Name: {{user?.firstName}} {{user?.lastName}}</h3>
+          <h3 class="text-left"> Email: {{user?.username}} </h3>
+          <h3 class="text-left"> Contact: {{user?.phone}} </h3>
+
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
